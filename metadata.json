@@ -1,0 +1,6 @@
+{
+  "name": "Aura Interior Design Studio",
+  "description": "An elegant, minimalist, and highly trendy portfolio website for an international interior design studio, featuring a custom interactive mood board and an AI-powered interior design consultation assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
