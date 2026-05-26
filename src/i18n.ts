@@ -4,6 +4,12 @@ const researchOfficeDetail = '/src/assets/images/regenerated_image_1779273712170
 const researchOfficeLounge = '/src/assets/images/regenerated_image_1779273723575.jpg';
 const researchOfficeConference = '/src/assets/images/regenerated_image_1779272061590.jpg';
 
+const wabiSabiTeaMain = '/src/assets/images/regenerated_image_1779761247386.jpg';
+const wabiSabiTeaDetail1 = '/src/assets/images/regenerated_image_1779761250441.jpg';
+const wabiSabiTeaDetail2 = '/src/assets/images/regenerated_image_1779761103405.jpg';
+
+const commercialHeadquartersMain = '/src/assets/images/regenerated_image_1779761564867.jpg';
+
 export const i18nConfig = {
   en: {
     title: 'AURA — Bespoke Interior Design Studio',
@@ -141,7 +147,7 @@ export const i18nConfig = {
       ]
     },
     contact: {
-      title: 'Contact Information',
+      title: 'Contact',
       subtitle: 'Interested in collaborating or have a project in mind? Connect with us via our direct locations, send an inquiry below, or schedule an atelier visit.',
       fields: {
         name: 'Full Name',
@@ -162,19 +168,13 @@ export const i18nConfig = {
         success: 'Your message has been sent successfully. Our team will get back to you within 24 hours.',
         error: 'Please complete all required fields.'
       },
-      officeTitle: 'The Ateliers',
+      officeTitle: 'The Atelier',
       offices: [
         {
-          city: 'London Atelier',
-          street: '32 Redchurch St, Shoreditch',
-          phone: '+44 (0) 20 7729 0100',
-          email: 'london@aurastudio.design'
-        },
-        {
-          city: 'Beijing Atelier',
-          street: 'Brick No. 6, 798 Art Zone, Chaoyang',
-          phone: '+86 (10) 5978 9000',
-          email: 'beijing@aurastudio.design'
+          city: 'Beijing Headquarters',
+          street: 'B.BLOCK 2F, Shumi Office Park, Yizhuang',
+          phone: '18610826004',
+          email: '253165370@qq.com'
         }
       ]
     }
@@ -315,7 +315,7 @@ export const i18nConfig = {
       ]
     },
     contact: {
-      title: '联系方式 & 联络专线',
+      title: '联系方式',
       subtitle: '期待与您共同探索空间、光影与材质的叙事。如您有项目设计委托、商务合作或预约到访，请随时通过以下方式与我们联系，或在右侧提交您的咨询信息。',
       fields: {
         name: '您的姓名',
@@ -339,16 +339,10 @@ export const i18nConfig = {
       officeTitle: '事务所驻地 Ateliers',
       offices: [
         {
-          city: '伦敦 Atelier (总部)',
-          street: '32 Redchurch St, Shoreditch',
-          phone: '+44 (0) 20 7729 0100',
-          email: 'london@aurastudio.design'
-        },
-        {
-          city: '北京 Atelier',
-          street: '朝阳区 798 艺术区 Brick No. 6',
-          phone: '+86 (10) 5978 9000',
-          email: 'beijing@aurastudio.design'
+          city: '北京总部 (Headquarters)',
+          street: '亦庄枢密院B.BLOCK 2F',
+          phone: '18610826004',
+          email: '253165370@qq.com'
         }
       ]
     }
@@ -392,33 +386,33 @@ export const sampleProjects: Project[] = [
   },
   {
     id: '02',
-    titleEN: 'Wabi-Sabi Tea Sanctuary & Residence',
-    titleZH: '北京胡同 侘寂茶苑私人宅邸',
-    subtitleEN: 'A serene shelter mirroring natural decay and timeless light.',
-    subtitleZH: '一个依水而起、见证自然无常的光之容器。',
+    titleEN: 'Private Residence — Luxury Within Substance',
+    titleZH: '私宅-奢华之中彰显内涵',
+    subtitleEN: 'Style cannot constrain the imagination of life.',
+    subtitleZH: '风格并不能约束生活的想象',
     category: 'residential',
     categoryLabelEN: 'Estates',
     categoryLabelZH: '住宅建构',
-    area: '145㎡',
+    area: '600㎡',
     locationEN: 'Beijing, China',
     locationZH: '中国 北京',
-    year: '2024',
-    mainImage: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800',
+    year: '2025',
+    mainImage: wabiSabiTeaMain,
     gallery: [
-      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800',
-      'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&q=80&w=800'
+      wabiSabiTeaDetail1,
+      wabiSabiTeaDetail2
     ],
-    palette: ['#ECEDE8', '#D6D5CE', '#A7A49B', '#4C4A45', '#8E6747'],
+    palette: ['#F3ECE5', '#E2D3C1', '#BBA28D', '#413A35', '#1F1E1C'],
     detail: {
-      conceptEN: 'Nestled near a historic huton compound, this space flows from an open tearoom to a secluded sleep master suite. Using hand-troweled clay plasters, local reclaimed elm pillars, and massive limestone sinks, we crafted a spatial experience that is deeply tactile and meditative.',
-      conceptZH: '设计静雅地伫立于北京核心胡同区域，流溢着从开敞的低洼中式茶苑到私密卧室套房的精巧轴线。全案选用手抹黏土、老房木梁回收的榆木木柱和大块天然莱姆石洗手盆，还原了充满手工刻痕、值得细细摩挲的侘寂冥想氛围。',
-      materialsEN: ['Natural Clay Plaster', 'Reclaimed Old Elm Pillars', 'Raw Split Limestone Block', 'Handwoven Rush Straw Matting'],
-      materialsZH: ['东方黏土矿物漆', '百年榆木榫卯立柱', '开山莱姆石手琢石槽', '手编蒲草榻榻米地垫'],
+      conceptEN: 'This project embodies the concept of "Luxury within Substance, Returning to the Essence of Living." Bypassing superficial symbols of traditional opulence, the design leverages warm volumetric geometry, honest and highly tactile materials, and soft, diffused architectural lighting to redefine premium residential comfort. Grounded in a calming warm-gray palette paired with textured stone slabs, organic wood blocks, and customized bouclé textiles, the spaces transition fluidly without rigid stylistic constraints, forming a self-contained sanctuary for modern living.',
+      conceptZH: '本案承载着“奢华内敛，回归生活本质”的设计主张。空间摒弃一切流于表面、拼凑堆砌的传统奢华符号，而倾向于通过温润的体量关系、质朴而富有触感的纯粹材质以及柔和漫折射的光源组织，重塑尊贵人居的真谛。以沉稳的大地暖灰为基调，搭配肌理细腻的天然原石、深邃有温差的原木及定制羊毛圈圈织物，使各功能分区在流动包容的体量感中自然转换，创造出一个不受任一风格约束、让居住者灵魂得以安放的生活容器。',
+      materialsEN: ['Italian Travertine & Stone', 'Custom Brushed Metal Parts', 'Rich Bouclé Statement Fabrics', 'Diffuse Arch-lighting Systems'],
+      materialsZH: ['意大利罗马洞石大板', '拉丝哑光金属扣件', '珍稀羊毛圈圈呢软包', '几何漫射隐藏式暖光线'],
       specs: {
-        area: '145㎡',
+        area: '600㎡',
         location: 'Dongcheng, Beijing',
-        year: '2024',
-        vibe: 'Meditative Wabi-Sabi'
+        year: '2025',
+        vibe: 'Quiet Luxury / 质享奢华'
       }
     }
   },
@@ -435,9 +429,9 @@ export const sampleProjects: Project[] = [
     locationEN: 'Munich, Germany',
     locationZH: '德国 慕尼黑',
     year: '2026',
-    mainImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800',
+    mainImage: commercialHeadquartersMain,
     gallery: [
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800'
+      commercialHeadquartersMain
     ],
     palette: ['#FAFAFA', '#E5E5E5', '#A3A3A3', '#171717', '#4F46E5'],
     detail: {

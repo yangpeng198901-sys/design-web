@@ -600,17 +600,27 @@ export default function App() {
 
                       {/* Main Big Display Image & Gallery Strip */}
                       <figure className="space-y-4">
-                        <div className="aspect-video w-full overflow-hidden bg-zinc-200 border border-black/10">
+                        <div className="w-full overflow-hidden bg-zinc-200 border border-black/10 flex justify-center items-center">
                           <img 
                             src={selectedProject.mainImage} 
                             alt="Large display room" 
-                            className="w-full h-full object-cover"
+                            className="w-full h-auto max-h-[75vh] object-contain block"
                           />
                         </div>
-                        <div className="grid grid-cols-3 gap-3">
+                        <div className={`grid gap-3 ${
+                          selectedProject.gallery.length === 1 
+                            ? 'grid-cols-1 max-w-2xl mx-auto' 
+                            : selectedProject.gallery.length === 2 
+                              ? 'grid-cols-2' 
+                              : 'grid-cols-3'
+                        }`}>
                           {selectedProject.gallery.map((img, i) => (
-                            <div key={i} className="aspect-video overflow-hidden bg-zinc-300 border border-black/10">
-                              <img src={img} alt="Gallery item" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                            <div key={i} className="overflow-hidden bg-zinc-300 border border-black/10 flex justify-center items-center">
+                              <img 
+                                src={img} 
+                                alt="Gallery item" 
+                                className="w-full h-auto hover:scale-105 transition-transform duration-500 object-contain block" 
+                              />
                             </div>
                           ))}
                         </div>
@@ -1338,7 +1348,7 @@ export default function App() {
                   📍 {t.contact.officeTitle}
                 </h4>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl mx-auto">
+                <div className={`grid gap-6 w-full mx-auto ${t.contact.offices.length === 1 ? 'grid-cols-1 max-w-md' : 'grid-cols-1 sm:grid-cols-2 max-w-2xl'}`}>
                   {t.contact.offices.map((office, idx) => (
                     <div key={idx} className="space-y-3 bg-white border border-black/[0.04] p-6 rounded-sm shadow-2xs">
                       <span className="text-xs font-bold text-studio-dark tracking-wide font-display">{office.city}</span>
@@ -1359,7 +1369,7 @@ export default function App() {
               </div>
 
               <div className="text-[10px] text-studio-muted font-mono text-center pt-4">
-                AURA Studio © {new Date().getFullYear()} — All Concepts Curated Globally.
+                北京向上生长空间艺术有限公司 © {new Date().getFullYear()} — All Concepts Curated Globally.
               </div>
             </div>
 
